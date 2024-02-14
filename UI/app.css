@@ -1,0 +1,121 @@
+body {
+    padding-top: 20px;    /* Adjust the top padding as needed */
+    padding-bottom: 100px; /* Adjust the bottom padding as needed */
+    margin: 0;
+}
+
+
+.card-wrapper {
+    margin: 5% 0;
+  }
+  
+/* You can adjust the image size by increasing/decreasing the width, height */
+.custom-circle-image {
+  width: 10vw; /* note i used vw not px for better responsive */
+  height: 10vw;
+}
+
+.custom-circle-image img {
+  object-fit: cover;
+}
+
+.card-wrapper {
+    max-width: 800px; /* Set a maximum width for the wrapper */
+    margin: 0 auto; /* Center the wrapper horizontally */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.card-title {
+    letter-spacing: 1.1px;
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add some spacing between elements */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .card-wrapper {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .card-title {
+        font-size: 16px; /* Adjust the font size for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card-wrapper {
+        padding: 5px; /* Further adjust padding for even smaller screens */
+    }
+
+    .card-title {
+        font-size: 14px; /* Further adjust the font size for even smaller screens */
+    }
+}
+
+
+/* .card-title {
+  letter-spacing: 1.1px;
+} */
+
+.card-text {
+  font-family: MerriweatherRegular;
+  font-size: 22px;
+  line-height: initial;
+}
+
+.dropzone {
+  border-style: dashed;
+}
+
+
+.error {
+  font-family: MerriweatherRegular;
+  font-size: 30px;
+  line-height: initial;
+  color: blue;
+  text-align: center;
+}
+
+#classTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#classTable td, #classTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#classTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col {
+    flex: 0 1 calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .col {
+        flex: 0 1 calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .col {
+        flex: 1 0 100%;
+    }
+}
